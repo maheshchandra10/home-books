@@ -1,36 +1,48 @@
-# Home Books
-Um aplicativo para gestão de livros digitais
+<p align="center">🎉
+  <a href="#-sobre"> Sobre </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conceitos-ensinados">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-material-de-apoio">Material de apoio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-como-baixar">Como baixar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#️-funcionalidades">Funcionalidades</a>
+</p>
 
-# Stack recomendada
-1. NodeJs
-2. ReactJs(NextJs,Remix ou Expo)
-3. Tailwindcss
-4. Material Symbols
+# 🔖 Sobre
 
-## Layout no figma
-[Clique aqui](https://www.figma.com/file/SScb4HxPGxcwhKN6p1Ur2S/Home-Books?type=design&node-id=0%3A1&mode=design&t=VLVxHQjCbNrR9RRD-1) para acessar o layout.
+Esse projeto foi desenvolvido parademonstrar as habilidades com desenvolvimento de softwares.
 
-## Desafio do projeto
-[Clique aqui](https://github.com/danilsonvss/home-books) para acessar o desafio.
+## ✍🏻 Tecnologias
 
-# Parte 1
+Durante o desenvolvimento, foram utilizados o NextJS 14, ReactJS, React Hot Toaster, TailwindCss, React-Icons, Next-Auth.
 
-**Objetivo**: integrar o login utilizando a API do github.
+## 🗂 Material de apoio
 
-**Critérios de aceitação**: Deve ser responsivo
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://react.dev/)atlas/database)
+- [React Hot Toaster](https://react-hot-toast.com/)
+- [TailwindCss](https://tailwindcss.com/)
+- [NextAuth](https://next-auth.js.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-**Prazo**: 1 dia
+## 👍🏻 Como baixar
 
-# Parte 2
-**Objetivo**: implementar a sidebar do aplicativo
+```bash
+    // Clonar repositório do frontend
+    $ git clone https://github.com/luancamposdev/home-books.git
 
-**Critérios de aceitação**: Deve ser responsivo
+    // Acessar diretório
+    $ cd home-books
 
-**Prazo**: 1 dia
+    // Instalar dependências
+    $ npm i, yarn, pnpm
 
-# Parte 3
-**Objetivo**: implementar a página do dashboard
+    // Iniciar projeto
+    $ npm run dev, yarn dev, pnpm dev
+```
 
-**Critérios de aceitação**: Deve ser responsivo
+## ☑️ Funcionalidades
 
-**Prazo**: 1 dia
+- [x] Autenticação com API do Github usando Nextauth<br/>
+- [ ] Dashboard
+---
+
+<h2 align="center">Desenvolvido por Luan Campos - 2023</h2>
