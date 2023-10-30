@@ -12,9 +12,6 @@ export const authOptions: AuthOptions = {
     signIn: "/",
   },
   secret: process.env.NEXTAUTH_SECRET as string,
-  jwt: {
-    secret: process.env.NEXTAUTH_JWT_SECRET,
-  },
 };
 
 const handler = NextAuth(authOptions);

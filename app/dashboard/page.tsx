@@ -1,19 +1,8 @@
 "use client";
 
-import { signOut, useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { signOut } from "next-auth/react";
 
 const Dashboard = () => {
-  const router = useRouter();
-  const session = useSession();
-
-  useEffect(() => {
-    if (session?.status === "unauthenticated") {
-      router.push("/");
-    }
-  }, [router, session]);
-
   return (
     <div>
       <h1 className="text-white">Home Books - Dashboard</h1>
