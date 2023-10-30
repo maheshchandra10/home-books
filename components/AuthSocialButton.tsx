@@ -24,18 +24,18 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
         gap-2
         rounded-md
         w-full md:w-fit
-        px-6 
-        py-3
+        px-[40px] 
+        py-[20px]
         bg-white
         text-black
-        text-xl
+        text-2xl
         font-semibold
         shadow-sm
         hover:bg-slate-100
         transition`
       )}
     >
-      <Icon size={24} />
+      <Icon size={36} />
       {text}
     </button>
   );

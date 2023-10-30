@@ -37,17 +37,17 @@ const Home = () => {
           flex
           flex-col
           items-center
-          gap-3
+          gap-[10px]
           px-5
           w-auto
         "
       >
         <h1
           className="
-          text-xl
+          text-[24px]
+          font-normal
+          leading-[29.5px]
           text-center
-          leading-6
-          font-semibold
         "
         >
           Conecte-se usando sua conta do GitHub.
