@@ -2,7 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Entre na plataforma",
+  title: "Home Books - Dashboard",
   description: "Sua biblioteca virtual",
 };
 
