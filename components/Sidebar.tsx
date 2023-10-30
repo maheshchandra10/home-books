@@ -3,7 +3,7 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ children }) => {
-  return <div>Sidebar {children}</div>;
+  return <div className="flex gap-9">Sidebar {children}</div>;
 };
 
 export default Sidebar;
