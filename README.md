@@ -42,7 +42,7 @@ Durante o desenvolvimento, foram utilizados o NextJS 14, ReactJS, React Hot Toas
 ## ☑️ Funcionalidades
 
 - [x] Autenticação com API do Github usando Nextauth<br/>
-- [ ] Dashboard
+- [x] Dashboard
 ---
 
 <h2 align="center">Desenvolvido por Luan Campos - 2023</h2>
