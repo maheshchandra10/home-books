@@ -2,12 +2,14 @@
 
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { BiLogoGithub } from "react-icons/bi";
 
 import AuthSocialButton from "@/components/AuthSocialButton";
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const session = useSession();
 
@@ -18,7 +20,23 @@ const Home = () => {
   }, [router, session]);
 
   const githubAuth = () => {
-    signIn("github", { redirect: false });
+    setIsLoading(true);
+
+    signIn("github", { redirect: false })
+      .then((callback) => {
+        if (callback?.error) {
+          toast.error("Credenciais Inválidas!");
+        }
+        if (callback?.ok) {
+          toast.success("Logado com sucesso!");
+        }
+      })
+      .catch((error) => {
+        console.error(error.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -53,6 +71,7 @@ const Home = () => {
           Conecte-se usando sua conta do GitHub.
         </h1>
         <AuthSocialButton
+          loading={isLoading}
           icon={BiLogoGithub}
           text="Entrar com GitHub"
           onClick={() => githubAuth()}

@@ -4,12 +4,14 @@ import { twMerge } from "tailwind-merge";
 interface AuthSocialButtonProps {
   icon: IconType;
   text: string;
+  loading?: boolean;
   onClick: () => void;
 }
 
 const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
   text,
   icon: Icon,
+  loading,
   onClick,
 }) => {
   return (
@@ -35,8 +37,8 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
         transition`
       )}
     >
-      <Icon size={36} />
-      {text}
+      {!loading && <Icon size={36} />}
+      {!loading ? text : "Carregando"}
     </button>
   );
 };
