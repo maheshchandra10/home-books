@@ -6,4 +6,6 @@ export default withAuth({
   },
 });
 
-export const config = { matcher: ["/dashboard"] };
+export const config = {
+  matcher: ["/dashboard", "/categories", "/authors", "/books"],
+};
