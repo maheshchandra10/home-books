@@ -35,6 +35,12 @@ Durante o desenvolvimento, foram utilizados o NextJS 14, ReactJS, React Hot Toas
     // Instalar dependências
     $ npm i, yarn, pnpm
 
+    // Configurar o aplicativo do projeto no github
+    https://github.com/settings/developers
+    
+    // Criar o arquivo .env.local na raiz do projeto
+    // Seguindo o modelo do .env.example
+
     // Iniciar projeto
     $ npm run dev, yarn dev, pnpm dev
 ```
@@ -42,7 +48,6 @@ Durante o desenvolvimento, foram utilizados o NextJS 14, ReactJS, React Hot Toas
 ## ☑️ Funcionalidades
 
 - [x] Autenticação com API do Github usando Nextauth<br/>
-- [x] Dashboard
 ---
 
 <h2 align="center">Desenvolvido por Luan Campos - 2023</h2>
