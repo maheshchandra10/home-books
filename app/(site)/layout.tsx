@@ -1,3 +1,4 @@
+import MobileMenu from "@/components/MobileMenu";
 import Sidebar from "@/components/Sidebar";
 import { Metadata } from "next";
 
@@ -9,7 +10,9 @@ export const metadata: Metadata = {
 const MainLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex h-full w-full">
-      <Sidebar>{children}</Sidebar>
+      <Sidebar />
+      <MobileMenu />
+      {children}
     </div>
   );
 };
