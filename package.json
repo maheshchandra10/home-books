@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.10.7",
     "material-symbols": "^0.13.2",
     "next": "14.0.0",
     "next-auth": "^4.24.4",
