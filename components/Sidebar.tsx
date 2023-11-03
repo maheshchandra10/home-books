@@ -4,13 +4,9 @@ import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 
 import Icons from "./Icons";
-import SidebarItem from "./SidebarItem";
+import MenuItem from "./MenuItem";
 
-interface SidebarProps {
-  children: React.ReactNode;
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ children }) => {
+const Sidebar = () => {
   const pathname = usePathname();
 
   const routes = useMemo(
@@ -48,7 +44,8 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
       <div
         className="
           group
-          flex
+          hidden
+          sm:flex
           flex-col
           h-full
           items-center
@@ -60,10 +57,9 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
         "
       >
         {routes.map((item) => (
-          <SidebarItem key={item.label} {...item} />
+          <MenuItem key={item.label} {...item} />
         ))}
       </div>
-      <main>{children}</main>
     </>
   );
 };
