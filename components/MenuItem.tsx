@@ -15,13 +15,14 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
   icon,
 }) => {
   return (
-    <Link
-      href={href}
-      className={twMerge(
-        `
+    <>
+      <Link
+        href={href}
+        className={twMerge(
+          `
         flex  
         items-center
-        justify-center group-hover:justify-normal
+        left-5
         h-[69px]
         w-full 
         gap-[10px] 
@@ -32,12 +33,13 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
         hover:text-primary
         transition
         py-5`,
-        active && "text-[#3ba1ff]"
-      )}
-    >
-      {icon}
-      <p className="hidden group-hover:flex">{label}</p>
-    </Link>
+          active && "text-[#3ba1ff]"
+        )}
+      >
+        {icon}
+        <p className="hidden group-hover:flex">{label}</p>
+      </Link>
+    </>
   );
 };
 

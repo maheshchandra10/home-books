@@ -5,6 +5,7 @@ import { useMemo } from "react";
 
 import Icons from "./Icons";
 import MenuItem from "./MenuItem";
+import { Profile } from "./Profile";
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -43,6 +44,7 @@ const Sidebar = () => {
     <>
       <div
         className="
+          relative
           group
           hidden
           sm:flex
@@ -59,6 +61,8 @@ const Sidebar = () => {
         {routes.map((item) => (
           <MenuItem key={item.label} {...item} />
         ))}
+
+        <Profile />
       </div>
     </>
   );

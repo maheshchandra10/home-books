@@ -5,6 +5,7 @@ import { useMemo } from "react";
 
 import Icons from "./Icons";
 import MenuItem from "./MenuItem";
+import { Profile } from "./Profile";
 
 const MobileMenu = () => {
   const pathname = usePathname();
@@ -39,10 +40,9 @@ const MobileMenu = () => {
     <>
       <div
         className="
-          absolute 
+          fixed
           flex
           sm:hidden
-          inset-x-0 
           bottom-0 
           w-full
           h-[80px]
@@ -50,11 +50,13 @@ const MobileMenu = () => {
           gap-5
           bg-[#222222]
           p-[30px]
+          z-10
         "
       >
         {routes.map((item, index) => (
           <MenuItem key={index} {...item} />
         ))}
+        <Profile className="static" />
       </div>
     </>
   );
